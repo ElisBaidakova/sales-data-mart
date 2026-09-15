@@ -11,11 +11,8 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.hooks.http_hook import HttpHook
 
 http_conn_id = HttpHook.get_connection('http_conn_id')
-#http_conn_id = HttpHook.get_connection('create_files_api')
-# api_key = http_conn_id.extra_dejson.get('api_key')
-api_key = '5f55e6c0-e9e5-4a9c-b313-63c01fc31460'
+api_key = http_conn_id.extra_dejson.get('api_key')
 base_url = http_conn_id.host
-# postgres_conn_id = 'postgresql_de'
 postgres_conn_id = 'pg_connection'
 
 nickname = 'baidakova'
