@@ -15,9 +15,6 @@ api_key = http_conn_id.extra_dejson.get('api_key')
 base_url = http_conn_id.host
 postgres_conn_id = 'pg_connection'
 
-nickname = 'baidakova'
-cohort = '12'
-
 headers = {
     'X-Nickname': nickname,
     'X-Cohort': cohort,
