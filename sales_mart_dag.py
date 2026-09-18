@@ -119,7 +119,7 @@ business_dt = '{{ ds }}'
 with DAG(
         'sales_mart',
         default_args=args,
-        description='Provide default dag for sprint3',
+        description='Provide default dag',
         catchup=False,
         start_date=datetime(2026, 2, 1),
 ) as dag:
